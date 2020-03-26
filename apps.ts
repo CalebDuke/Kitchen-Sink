@@ -1,21 +1,26 @@
-var firstName = ('caleb');
-const states = (50);
+export {};
+var firstName:string  = ('caleb');
+const states:number = (50);
 
-var a = 5 + 4 
+var a:number = 5 + 4 
     console.log(a);
 /*addition function*/
 
 
-function sayHello() {
+function sayHello():void {
     alert("Hello World!")
 }
 sayHello();
 
-var veggies = ['Corn', 'Tomato', 'Avacado', 'Green Beans', 'Beets'];
+var veggies: string[] = ['Corn', 'Tomato', 'Avacado', 'Green Beans', 'Beets'];
 console.log(veggies)
 
+interface Person {
+    name: string,
+    age: number
+}
 
-var test = [
+var test: Array<Person> = [
     {
         name: "Josh",
         age: 21
@@ -37,7 +42,7 @@ var test = [
         age: 21
     }
 ]
-function checkAge(person) {
+function checkAge(person: any): void {
     for (let i = 0; i < person.length; i++) {
         console.log(person.name,person.age)
         if(person[i].age<21){
